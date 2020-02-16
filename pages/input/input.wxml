@@ -1,0 +1,21 @@
+<!--pages/input/input.wxml-->
+<!-- 1.input的基本使用 -->
+<input />
+
+<!-- 2. input中的默认值 -->
+<input value="Marron" />
+
+<!-- 3. type: 决定键盘类型(文本输入键盘/数字/身份证) -->
+<input type="idcard" />
+
+<!-- 4. password: 密码 -->
+<input password />
+
+<!-- 5. placehoder: 占位符 -->
+<input placeholder="请输入内容" />
+
+<!-- 6. 绑定事件: bindinput、bindfocus、bindblur、bindconfirm -->
+<input bindinput="handleInput" 
+       bindfocus="handleFocus"
+       bindblur="handleBlur"
+/>

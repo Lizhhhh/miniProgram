@@ -1,0 +1,29 @@
+<!--pages/image/image.wxml-->
+<!-- 1. src: 图片路径 -->
+<!-- 绝对路径 -->
+<image src='/assets/pics/1.jpg' />
+<!-- 相对路径 -->
+<image src='../../assets/pics/1.jpg' />
+<!-- 远程路径 -->
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" />
+
+<!-- 补充: 选中相册中的图片-->
+<button bindtap="handleChooseAlbum">选中</button>
+<image src="{{imagePath}}" />
+
+<!-- 3.bindload: 监听图片加载完成 -->
+<!-- 4.lazy-load: 图片懒加载 -->
+<view>--------------------</view>
+<image 
+  src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" bindload="handImageLoad"
+  lazy-load
+/>
+
+<!-- 5.show-menu-by-longpress: 开启长按图片识别小程序菜单 -->
+<image src="/assets/pics/17.jpg" show-menu-by-longpress />
+
+<!-- 6.mode: 图片的显示 -->
+<view> 
+  <view>图片的适配请看官方网站</view>
+  <view>https://developers.weixin.qq.com/miniprogram/dev/component/image.html </view>
+</view>
