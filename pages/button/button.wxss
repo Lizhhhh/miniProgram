@@ -1,0 +1,11 @@
+/* pages/button/button.wxss */
+
+.row {
+  padding: 15px;
+  border-bottom: 1px solid black;
+}
+
+.pressed {
+  color: white;
+  background: red;
+}

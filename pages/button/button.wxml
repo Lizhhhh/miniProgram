@@ -1,0 +1,54 @@
+<!--pages/button/button.wxml-->
+<!-- 1.按钮的基本使用 -->
+<view class="row">
+  <view>1.按钮的基本使用</view>
+  <button>按钮</button>
+</view>
+
+
+<!-- 2.size: mini -->
+<view class="row">
+  <view>2.size: mini</view>
+  <button size="mini">mini按钮</button>
+  <button size="mini">mini按钮</button>
+</view>
+
+
+<!-- 3.type: primary、default、warn -->
+<view class="row">
+  <view>3.type: primary、default、warn</view>
+  <button size="mini" type="primary">mini按钮 primary</button>
+  <button size="mini" type="default">mini按钮 default</button>
+  <button size="mini" type="warn">mini按钮 warn</button>
+</view>
+
+
+<!-- 4.plain: 镂空效果 -->
+<view class="row">
+  <view>4.plain: 镂空效果</view>
+  <button size="mini" type="primary">mini按钮 primary 非镂空</button>
+  <button size="mini" type="primary" plain>mini按钮 primary 镂空</button>
+</view>
+
+
+<!-- 5.disable: 不可用 -->
+<view class="row">
+  <view>5.disable: 不可用</view>
+  <button size="mini">按钮</button>
+  <button size="mini" disabled>按钮禁用</button>
+</view>
+
+
+<!-- 6.loading: 加载 -->
+<view class="row">
+  <view>6.loading: 加载</view>
+  <button size="mini">按钮</button>
+  <button size="mini" loading="{{isLoading}}">loading 按钮</button>
+</view>
+
+
+<!-- 7.hover-class: 点击时候的样式 -->
+<view class="row">
+  <view>7.hover-class: 点击时候的样式 </view>
+  <button hover-class="pressed">按钮</button>
+</view>
